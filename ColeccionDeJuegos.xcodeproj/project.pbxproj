@@ -14,6 +14,7 @@
 		E74585EC2CAB444F00DEA9D6 /* ColeccionDeJuegos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E74585EA2CAB444F00DEA9D6 /* ColeccionDeJuegos.xcdatamodeld */; };
 		E74585EE2CAB445100DEA9D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E74585ED2CAB445100DEA9D6 /* Assets.xcassets */; };
 		E74585F12CAB445100DEA9D6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E74585F02CAB445100DEA9D6 /* Base */; };
+		E74585F92CAB5EE600DEA9D6 /* JuegosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74585F82CAB5EE600DEA9D6 /* JuegosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E74585ED2CAB445100DEA9D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E74585F02CAB445100DEA9D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E74585F22CAB445100DEA9D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E74585F82CAB5EE600DEA9D6 /* JuegosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				E74585E32CAB444F00DEA9D6 /* SceneDelegate.swift */,
 				E74585E52CAB444F00DEA9D6 /* ViewController.swift */,
 				E74585E72CAB444F00DEA9D6 /* Main.storyboard */,
+				E74585F82CAB5EE600DEA9D6 /* JuegosViewController.swift */,
 				E74585ED2CAB445100DEA9D6 /* Assets.xcassets */,
 				E74585EF2CAB445100DEA9D6 /* LaunchScreen.storyboard */,
 				E74585F22CAB445100DEA9D6 /* Info.plist */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E74585F92CAB5EE600DEA9D6 /* JuegosViewController.swift in Sources */,
 				E74585E62CAB444F00DEA9D6 /* ViewController.swift in Sources */,
 				E74585E22CAB444F00DEA9D6 /* AppDelegate.swift in Sources */,
 				E74585E42CAB444F00DEA9D6 /* SceneDelegate.swift in Sources */,
