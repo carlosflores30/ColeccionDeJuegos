@@ -19,6 +19,32 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3Zm-et-vws">
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="JuegoCell" textLabel="kuZ-LD-J3V" detailTextLabel="InA-sO-09L" style="IBUITableViewCellStyleSubtitle" id="in8-EI-4nM">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="in8-EI-4nM" id="OJ1-d8-HDj">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kuZ-LD-J3V">
+                                                    <rect key="frame" x="20" y="6.0000000000000009" width="25" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="InA-sO-09L">
+                                                    <rect key="frame" x="19.999999999999996" y="22.333333333333336" width="43.666666666666664" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -33,7 +59,7 @@
                     <navigationItem key="navigationItem" id="hgf-ss-8us">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ahz-zy-6Vh">
                             <connections>
-                                <segue destination="Icx-fU-4d9" kind="show" id="kCz-f7-V2z"/>
+                                <segue destination="Icx-fU-4d9" kind="show" identifier="juegoSegue" id="kCz-f7-V2z"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -59,29 +85,36 @@
                                     <constraint firstAttribute="width" constant="280" id="lkb-5n-bdF"/>
                                 </constraints>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese Titulo" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F0j-Ua-jMJ">
+                                <rect key="frame" x="56.666666666666657" y="305" width="280" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FwT-Ba-O5I">
+                                <rect key="frame" x="0.0" y="359" width="393" height="216"/>
+                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDb-fK-AKp">
-                                <rect key="frame" x="154" y="359" width="85" height="35"/>
+                                <rect key="frame" x="154" y="595" width="85" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Agregar"/>
                                 <connections>
                                     <action selector="agregarTapped:" destination="Icx-fU-4d9" eventType="touchUpInside" id="laA-f8-HDe"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese Titulo" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F0j-Ua-jMJ">
-                                <rect key="frame" x="56.666666666666657" y="305" width="280" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5yE-6B-bXF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="1EE-dG-Dio" firstAttribute="width" secondItem="F0j-Ua-jMJ" secondAttribute="width" id="1lU-q5-xxi"/>
+                            <constraint firstItem="FwT-Ba-O5I" firstAttribute="centerX" secondItem="6xa-G2-6vg" secondAttribute="centerX" id="35s-TX-Qho"/>
+                            <constraint firstItem="FwT-Ba-O5I" firstAttribute="leading" secondItem="5yE-6B-bXF" secondAttribute="leading" id="9gz-rv-MPb"/>
                             <constraint firstItem="F0j-Ua-jMJ" firstAttribute="centerX" secondItem="6xa-G2-6vg" secondAttribute="centerX" id="CSI-Lu-q1y"/>
-                            <constraint firstItem="VDb-fK-AKp" firstAttribute="centerX" secondItem="6xa-G2-6vg" secondAttribute="centerX" id="Fee-oC-4cN"/>
                             <constraint firstItem="F0j-Ua-jMJ" firstAttribute="top" secondItem="1EE-dG-Dio" secondAttribute="bottom" constant="20" id="VJu-o8-6tc"/>
+                            <constraint firstItem="FwT-Ba-O5I" firstAttribute="top" secondItem="F0j-Ua-jMJ" secondAttribute="bottom" constant="20" id="XHL-ou-OFs"/>
+                            <constraint firstAttribute="trailing" secondItem="FwT-Ba-O5I" secondAttribute="trailing" id="Zxh-bZ-fR4"/>
                             <constraint firstItem="1EE-dG-Dio" firstAttribute="top" secondItem="5yE-6B-bXF" secondAttribute="top" constant="32" id="bAk-V7-TaR"/>
-                            <constraint firstItem="VDb-fK-AKp" firstAttribute="top" secondItem="F0j-Ua-jMJ" secondAttribute="bottom" constant="20" id="sgI-ka-H8W"/>
+                            <constraint firstItem="VDb-fK-AKp" firstAttribute="top" secondItem="FwT-Ba-O5I" secondAttribute="bottom" constant="20" id="heF-9W-iJz"/>
+                            <constraint firstItem="FwT-Ba-O5I" firstAttribute="centerX" secondItem="VDb-fK-AKp" secondAttribute="centerX" id="tga-oU-yfC"/>
                             <constraint firstItem="1EE-dG-Dio" firstAttribute="centerX" secondItem="6xa-G2-6vg" secondAttribute="centerX" id="vhY-ej-NVz"/>
                         </constraints>
                     </view>
@@ -100,6 +133,8 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="agregarActualizarBoton" destination="VDb-fK-AKp" id="290-hs-h6a"/>
+                        <outlet property="elegirCategoria" destination="FwT-Ba-O5I" id="8t8-rh-kHM"/>
                         <outlet property="imageView" destination="1EE-dG-Dio" id="Rh9-fl-DCj"/>
                         <outlet property="tituloTextField" destination="F0j-Ua-jMJ" id="r73-Ek-nha"/>
                     </connections>
